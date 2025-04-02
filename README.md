@@ -1,9 +1,10 @@
+
 # 🛠️ DevOps Roadmap: From Self-Taught to Job-Ready
 
 > ⚠️ **Note:**  
 > This roadmap does **not** reflect a beginner’s journey. I already have a strong technical foundation and am using this roadmap to sharpen, certify, and formalize my DevOps skill set for job readiness. I'll be refreshing my knowledge on core tools throughout and especially at the beginning of the journey. Here’s a quick snapshot of my background:
 >
-> - 🐧 **Linux:** 2+ years running Arch Linux as my daily driver - experienced in configuring development environments from scratch, managing packages with pacman, yay, and the AUR, switching between shells (Zsh, Bash), and solving low-level system issues 
+> - 🐧 **Linux:** 2+ years running Arch Linux as my daily driver - experienced in configuring development environments from scratch, managing web servers, and solving low-level system issues 
 > - 🧠 **Git, GitHub:** Used daily across personal and collaborative projects  
 > - 🐳 **Docker:** 1 year experience writing Dockerfiles, managing containers, and using Docker Compose  
 > - 📦 **DevOps Stack:** Familiar with the landscape of CI/CD, IAC, container orchestration, and monitoring tools  
@@ -136,3 +137,7 @@ I’m documenting my journey, troubleshooting tips, and lessons learned in the `
 
 > “DevOps isn't about tools — it's about attitude. I build, I break, I automate, I repeat.”
 
+=======
+# devops-roadmap
+My self-taught DevOps learning journey
+>>>>>>> 5ed1aaad2520c18e8ef832953f12b387d460e79c
