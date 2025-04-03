@@ -1,139 +1,132 @@
 # 🛠️ DevOps Roadmap: From Self-Taught to Job-Ready (2025 Edition)
 
-> ⚠️ **Note:**  
-> This roadmap assumes prior technical skill. I’m not starting from scratch — I’m sharpening and formalizing my knowledge to become a **certified, cloud-native DevOps engineer**.  
+> ⚠️ This roadmap builds on my existing technical skills to formalize and deepen my DevOps expertise. My goal is to become a **cloud-native, high-impact DevOps engineer** by mastering tools, best practices, and workflows used by top teams in the industry.  
 >
-> **Background Snapshot:**
-> - 🐧 2+ yrs Arch Linux (daily driver) – CLI fluency, web server config, systemd, package management  
-> - 🐳 1+ yr Docker – Compose, container management, troubleshooting  
-> - 🧠 Git/GitHub – Branching, rebasing, merge strategies, PR reviews  
-> - 🧑‍💻 Python, Flask, React, AI integration  
-> - 🤖 1+ yr AI-accelerated dev (Claude, Cursor, Windsurf)  
-> - 🧰 Familiar with CI/CD, IaC, K8s, observability tooling  
-
-This roadmap takes me from **self-taught Dev** to **cloud-native DevOps pro** ready to contribute to SRE/infra/code pipelines at a high level.
+> Inspired by [roadmap.sh/devops](https://roadmap.sh/devops), this plan prioritizes **in-demand, high-paying skills** backed by real-world projects and industry-standard certifications.
 
 ---
 
-## 📅 Roadmap Overview
+## 👨‍💻 About Me
 
-| Phase | Timeline   | Focus                              |
-|-------|------------|-------------------------------------|
-| 1️⃣   | Weeks 1–4   | Linux, Bash, Git, CLI tooling       |
-| 2️⃣   | Weeks 5–8   | Docker, GitHub Actions, CI pipelines |
-| 3️⃣   | Weeks 9–12  | AWS, Terraform, IAM, modules        |
-| 4️⃣   | Weeks 13–16 | K8s, Helm, ArgoCD                   |
-| 5️⃣   | Weeks 17–20 | Prometheus, Grafana, full project polish |
+- 🐧 2+ yrs Arch Linux as daily driver – strong with shell, systemd, troubleshooting
+- 🧠 Fluent in Git, GitHub workflows, pull requests, rebasing
+- 🐳 1+ yr Docker experience – Dockerfiles, Compose, image optimization
+- 🧑‍💻 Intermediate in Python, Flask, React, and AI toolchains (Claude, Cursor, Windsurf)
+- 🔧 Familiar with CI/CD, IaC, Kubernetes, observability, and automation
+- 💬 Learning with: [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+
+---
+
+## 📅 Learning Path Overview
+
+| Phase | Timeline   | Focus                                   |
+|-------|------------|------------------------------------------|
+| 1️⃣   | Weeks 1–4   | Linux, Bash, Git, Networking             |
+| 2️⃣   | Weeks 5–8   | Python, Databases, Message Brokers       |
+| 3️⃣   | Weeks 9–12  | Containers, CI/CD, Cloud Providers       |
+| 4️⃣   | Weeks 13–16 | Infrastructure as Code, Monitoring, Security |
+| 5️⃣   | Weeks 17–20 | Advanced DevOps, Capstone Project        |
 
 ---
 
 ## ✅ Phase 1: Core Skills & Shell Mastery
 
-**Primary Resource:**  
-✅ [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
-
-**Skills:**
-- Shell scripting, dotfiles, piping, tmux, grep/awk/sed mastery
-- Git CLI deep dive: squash merges, cherry-pick, bisect
-- SSH, rsync, systemctl, journald, crontab, networking
+**Learning:**
+- Linux CLI, systemd, user/group management, networking
+- Bash scripting and dotfile automation
+- Git branching, rebasing, merge conflicts, submodules
+- OSI model, TCP/IP, DNS, HTTP/HTTPS
 
 **Projects:**
-- [ ] Dotfiles with install script  
-- [ ] Custom `systemd` service for a web app  
-- [ ] Bash script: backup + sync to cloud (rclone or AWS S3 CLI)  
+- [ ] Custom dotfiles + install script  
+- [ ] systemd service to run a Flask app  
+- [ ] Bash backup script using rclone and cron  
 
 ---
 
-## ⚙️ Phase 2: Containers & CI/CD
+## ⚙️ Phase 2: Programming & Data Flow
 
-**Certs Targeted:**
-- [ ] Docker Certified Associate *(optional)*  
-- [ ] GitHub Actions beginner + advanced badge  
-
-**Skills:**
-- Dockerfile layering, multi-stage builds, Docker networking  
-- GitHub Actions: matrix builds, reusable workflows, secrets  
-- CI best practices: testing, artifact upload, deployments  
+**Learning:**
+- Python for scripting, tools, and automation
+- SQL & NoSQL (PostgreSQL, MongoDB)
+- RabbitMQ & Kafka basics
 
 **Projects:**
-- [ ] Dockerized Flask/React fullstack app  
-- [ ] GH Actions pipeline: test + build + push to DockerHub  
-- [ ] Private Docker registry on a VPS  
+- [ ] Python service that writes to DB and publishes to a message broker  
+- [ ] CLI tool for querying logs or DBs  
+- [ ] Dockerized FastAPI backend with message broker integration  
 
 ---
 
-## ☁️ Phase 3: Cloud & Infrastructure as Code (IaC)
+## ☁️ Phase 3: Containers, CI/CD & Cloud
 
-**Certs Targeted:**
-- [ ] **Terraform Associate (HashiCorp)**  
-- [ ] **AWS Cloud Practitioner → AWS SAA (in time)**  
+**Cert Goals:**
+- [ ] Docker Certified Associate *(optional)*
+- [ ] AWS Cloud Practitioner or SAA *(recommended)*
 
-**Skills:**
-- Terraform: resources, providers, outputs, modules, remote state  
-- AWS: EC2, VPC, IAM, S3, CloudWatch  
-- IAM policies: least privilege, roles, trust policies  
+**Learning:**
+- Dockerfiles, volumes, networking, multi-stage builds
+- CI/CD with GitHub Actions (matrix builds, environments, caching)
+- AWS: EC2, IAM, S3, CloudWatch basics
 
 **Projects:**
-- [ ] Terraform-managed AWS infra: EC2 + VPC + S3 + IAM  
-- [ ] Remote backend on S3 w/ DynamoDB locking  
-- [ ] CI/CD deploy to AWS via Terraform GitHub Actions workflow  
+- [ ] Fullstack app in Docker Compose  
+- [ ] CI/CD: auto test + build + deploy to cloud  
+- [ ] Cloud-hosted app with HTTPS + autoscaling  
 
 ---
 
-## ☸️ Phase 4: Kubernetes & GitOps
+## 🛠️ Phase 4: Infra as Code, Monitoring & Security
 
-**Certs Targeted:**
-- [ ] **Certified Kubernetes Administrator (CKA)**  
+**Cert Goals:**
+- [ ] Terraform Associate
+- [ ] Begin prep for CKA
 
-**Skills:**
-- K8s architecture: pods, services, deployments, statefulsets  
-- Helm templating & value overrides  
-- GitOps principles: ArgoCD/FluxCD  
-- Secrets management (sealed secrets or SOPS)  
+**Learning:**
+- Terraform: modules, state management, remote backends
+- Ansible for provisioning and config mgmt
+- Prometheus + Grafana for metrics/alerts
+- DevSecOps best practices (least privilege, secrets mgmt)
 
 **Projects:**
-- [ ] K3d or Minikube local cluster w/ Helm-deployed app  
-- [ ] ArgoCD repo: GitOps CD for staging & prod  
-- [ ] Self-healing app demo with HPA and node taints/tolerations  
+- [ ] IaC to provision EC2/VPC/S3 + automated teardown  
+- [ ] Monitoring dashboard + alert rules for a live app  
+- [ ] Secure CI pipeline with secrets + scanner integration  
 
 ---
 
-## 📊 Phase 5: Monitoring, Logging & Capstone
+## ☸️ Phase 5: K8s, GitOps & Capstone
 
-**Skills:**
-- Prometheus metrics, exporters, alerting rules  
-- Grafana dashboards: templated views, alerts  
-- Loki or ELK for logs (optional)  
-- CI visibility: monitor builds + deploys  
+**Cert Goals:**
+- [ ] Certified Kubernetes Administrator (CKA)
+
+**Learning:**
+- Kubernetes: Deployments, Services, Ingress, Volumes, RBAC
+- Helm, Sealed Secrets, GitOps (ArgoCD)
+- SRE concepts: SLOs, SLIs, error budgets
 
 **Capstone Ideas:**
-- [ ] End-to-end infra: IaC + K8s + CI/CD + monitoring  
-- [ ] Demo: self-healing app + dashboard + GitOps deploy  
-- [ ] Resume-ready blog post: "My DevOps Pipeline in the Cloud"  
-
-**Polish Checklist:**
-- [ ] Portfolio README with diagrams  
-- [ ] DevOps resume tailored to SRE/platform roles  
-- [ ] GitHub cleaned up: pin top projects, descriptive READMEs  
-- [ ] LinkedIn optimized: keywords, banner, pinned projects  
+- [ ] App deployed via Helm to local + cloud clusters  
+- [ ] GitOps pipeline with ArgoCD staging + prod  
+- [ ] Resume-ready write-up with diagrams + live demo  
 
 ---
 
-## 🎓 Certifications to Prioritize
+## 🧪 Certifications Tracker
 
-| Cert                           | Purpose                         | Priority     |
-|--------------------------------|----------------------------------|--------------|
-| **Terraform Associate**        | Prove cloud/IaC automation skills | 🥇 High      |
-| **CKA**                        | In-demand K8s admin skillset      | 🥈 High      |
-| **AWS Cloud Practitioner**     | Cloud fluency baseline            | 🥉 Optional  |
-| **AWS Solutions Architect**    | Architect-level cert              | Bonus        |
-| ~~RHCSA~~                      | Legacy Linux admin                | ❌ Skip      |
+| Cert                                   | Status     | Notes                        |
+|----------------------------------------|------------|------------------------------|
+| Terraform Associate                    | 🟡 In Progress | IaC foundation               |
+| CKA – Certified Kubernetes Admin       | 🟡 Starting soon | Core for cloud-native roles |
+| AWS Certified Solutions Architect      | 🔲 Optional | Only if cloud-heavy roles    |
+| Docker Certified Associate             | 🔲 Optional | Good but not essential       |
 
 ---
 
-## 🛠️ Tech Stack Focus
+## 🛠️ Tools I'm Learning
 
 ![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326ce5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
@@ -146,10 +139,10 @@ This roadmap takes me from **self-taught Dev** to **cloud-native DevOps pro** re
 
 ---
 
-## ✍️ Notes & Blog (Coming Soon)
+## ✍️ Notes & Documentation
 
-- 📁 `/notes` directory: shell tricks, Terraform patterns, CI workflows  
-- 📝 Blog: Lessons learned, tutorials, build breakdowns  
+- `/notes` – shell tricks, Terraform patterns, GitHub Actions workflows  
+- Blog (coming soon): Write-ups of major projects, guides, and troubleshooting logs  
 
 ---
 
@@ -157,4 +150,4 @@ This roadmap takes me from **self-taught Dev** to **cloud-native DevOps pro** re
 
 - GitHub: [@diegonunez77](https://github.com/diegonunez77)  
 - LinkedIn: [Diego Saavedra](https://www.linkedin.com/in/your-link/)  
-- Blog: *Coming soon*  
+- Dev Blog: *Coming soon*  
